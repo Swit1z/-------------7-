@@ -5,79 +5,16 @@
    
 }
 
+
 body {
     font-family: 'Regular';
-    width: flex;
     color: white;
     background-color: #000000
 }
 
-header{
-    position: sticky;
-    background-color: #000000;
-    
-}
-
-.container{
-    margin: 0px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    width: 60px;  
-    height: 60px;  
-    padding: 20px;
-    padding-left: 200px;
-}
-.burger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 28px;
-  height: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10;
-}
-.burger span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: #fff;
-  border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-
-/* Десктоп: меню горизонтальное, бургер скрыт */
-@media (min-width: 768px) {
-  .burger { display: none; }
-  .nav-menu {
-    position: static;
-    display: flex;
-    flex-direction: row;
-    max-height: none;
-    background: transparent;
-    width: auto;
-  }
-  .nav-menu a { border-bottom: none; padding: 0 1rem; }
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    padding-left: 30px;
-    font-size: 20px;
-
-}
-
 .buy{
     background-image: url(../images/1image.jpg);  
-    height: 1080px;
+    height: 1440px;
     background-size: cover;
     background-repeat: no-repeat;     
     background-position: center;       
@@ -241,29 +178,61 @@ a{
     margin: 0;
     padding: 0;
 }
-/* подвал */
-footer{
-    background-color: #000000;
-    min-height: 80px;          
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;                 
-    padding: 20px;
-   
-}
-.footer-links {
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-    align-items: center;
-    
-}
 
-.copyright p {
-    color: #ffffff;
-    font-size: 14px;
-    margin: 0;
-    text-align: center;
+@media (max-width: 768px) {
+       
+    .buy{
+        text-align: left;
+        flex-direction: column; 
+        align-items: center;
+        padding-left: 0; 
+        justify-content: center;
+        max-height: 460px;
+        text-align: center;
+
+    }
+    
+    .buy h2 {
+        font-size: 32px;
+        display: flex;
+        flex-direction: column;
+        min-height: 50px;
+        max-height: 100px;
+        padding-left: 0px;
+        max-width: 200px;
+    }
+    .Rust{
+        max-height: 500px;
+    }
+
+    .RustBack {
+        width: 100%;
+    }
+    
+    .Rust p, .twitch p {
+        font-size: 18px;
+        padding: 20px;
+    }
+    .pcgame{
+        height: 400px;
+    }
+    .pcgame h2{
+        font-size: 20px;
+    }
+
+    .buy-button, .twitch-button {
+        width: 90%;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .email-form{
+        width: 50%;
+        display: flex;
+        align-items: row;
+    }
+
+    .email-input {
+        width: 90%;
+    }
 }
 

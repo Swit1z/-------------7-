@@ -5,43 +5,16 @@
    
 }
 
+
 body {
     font-family: 'Regular';
-    width: flex;
     color: white;
     background-color: #000000
 }
 
-header{
-    position: sticky;
-    background-color: #000000;
-    
-}
-
-.container{
-    margin: 0px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    width: 70px;  
-    height: auto;  
-    padding: 20px;
-    padding-left: 200px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    padding-left: 30px;
-    font-size: 20px;
-
-}
 .wiki{
   background-image: url(../images/about.png);
-    height: 1080px;
+    height: 1440px;
     background-size: cover;
     background-repeat: no-repeat;     
     background-position: center;       
@@ -85,14 +58,6 @@ a{
     margin-bottom: 60px;
 }
 
-.about-line {
-    height: 1px; 
-    background-color: #ffffff;
-    margin: 20px auto;
-    width: 85%;
-    margin-bottom: 60px;
-}
-
 .text{
     max-width: 1000px;
     width: 100%;
@@ -120,28 +85,17 @@ a{
     margin: 50px;
     margin-bottom: 60px;
 }
-footer{
-    background-color: #000000;
-    min-height: 80px;          
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;                 
-    padding: 20px;
-   
-}
-.footer-links {
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-    align-items: center;
-    
-}
 
-.copyright p {
-    color: #ffffff;
-    font-size: 14px;
-    margin: 0;
-    text-align: center;
-}
 
+@media (max-width: 768px) {
+
+    .wiki {
+        display: flex;
+        max-height: 400px;
+    }
+    .wiki h2{
+        font-size: 32px;
+        margin-top: 0;
+
+    }
+}
