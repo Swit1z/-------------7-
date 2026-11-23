@@ -10,37 +10,10 @@ body {
     width: flex;
     color: white;
     background-color: #000000
+    
 }
 
-header{
-    position: sticky;
-    background-color: #000000;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px 10px 20px;
-    align-items: center;
-}
-
-.logo{
-    width: 50px;
-    height: 50px;
-}
-
-.headersearch{
-    padding: 10px 30px 10px 30px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    padding-left: 30px;
-    font-size: 20px;
-
-}
-.wiki{
+.bild{
   background-image: url(../images/building.png);
     height: 1080px;
     background-size: cover;
@@ -53,7 +26,7 @@ a{
     align-items: center;
     flex-direction: column;
 }
-.wiki h2{
+.bild h2{
     
     font-size: 64px;
     text-align: center;
@@ -61,7 +34,7 @@ a{
     margin-top: 500px;
 }
 
-.about {
+.wardrobe {
     background-color: #252525;      
     display: flex;
     justify-content: center;
@@ -70,7 +43,7 @@ a{
     padding: 100px 50px;
 }
 
-.about p {
+.wardrobe p {
     max-width: 800px;
     font-size: 24px;
     text-align: center;
@@ -79,7 +52,7 @@ a{
     padding: 50px;
 }
 
-.about h2 {
+.wardrobe h2 {
     font-size: 36px;
     text-align: center;
     padding: 0;
@@ -120,27 +93,17 @@ a{
     color: #ffffff;
     margin: 0px;
 }
-footer{
-    background-color: #000000;
-    min-height: 80px;          
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;                 
-    padding: 20px;
-   
-}
-.footer-links {
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-    align-items: center;
-    
-}
 
-.copyright p {
-    color: #ffffff;
-    font-size: 14px;
-    margin: 0;
-    text-align: center;
+
+@media (max-width: 768px) {
+
+    .bild {
+        display: flex;
+        max-height: 400px;
+    }
+    .bild h2{
+        font-size: 32px;
+        margin-top: 0;
+
+    }
 }

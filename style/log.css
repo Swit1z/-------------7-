@@ -99,18 +99,9 @@ footer{
     background-color: #000000;
     min-height: 80px;          
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 30px;                 
-    padding: 20px;
-   
-}
-.footer-links {
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .copyright p {
@@ -118,4 +109,45 @@ footer{
     font-size: 14px;
     margin: 0;
     text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+.footerlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 12px;
+    align-items: column;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .headersearch {
+        width: 80%; 
+        box-sizing: border-box;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    header nav a {
+        padding-left: 0; 
+        padding: 10px 0;
+        border-bottom: 1px;
+        font-size: 18px;
+    }
+
 }
